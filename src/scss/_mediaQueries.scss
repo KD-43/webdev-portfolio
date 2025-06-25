@@ -1,0 +1,226 @@
+@use '../scss/scss_variables/mixins' as *;
+
+@media (min-width: 1401px) {
+    .page-body {
+        width: min(100%, 50vw);
+    }
+}
+
+@media (max-width: 1400px) {
+    .logo {
+        aspect-ratio: auto;
+        width: clamp(15vw, 30vw, 100vw);
+        height: auto;
+    }
+
+    .navbar-wrapper {
+        @include flex-center(3rem);
+    }
+
+    .navbar {
+        // font-size: clamp(0.25vw, 2vw, 4vw);
+        font-size: clamp(1vw, 2vw, 3vw);
+    }
+
+    .page-wrapper {
+        align-items: center;
+        // padding: 0;
+
+        // .text-display {
+        //     // font-size: clamp(1vw, 4.05vw, 5vw);
+        //     font-size: clamp(1vw, 4.05vw, 5vw);
+        //     text-align: center;
+        // }
+    }
+
+    .page-body {
+        @include flex-center(0);
+        align-items: center;
+        font-size: clamp(0.25em, 100%, 1.5em);
+        width: clamp(15vw, 70vw, 100vw);
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .page-body_message {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .page-heading {
+        font-size: clamp(2em, 4vw, 4em);
+        text-align: center;
+    }
+
+    main {
+        padding-bottom: 10rem;
+    }
+
+    footer {
+        .text-body {
+            font-size: clamp(0.25em, 0.75em, 1em);
+        }
+    }
+
+    #resume-profile {
+        width: 100%;
+    }
+
+    #btn-download {
+        font-size: clamp(0.15em, 2vw, 0.75em);
+    }
+
+}
+
+@media (max-width: 1000px) {
+    .logo {
+        width: clamp(1vw, 25vw, 100vw);
+    }
+    
+    .page-wrapper {
+        padding-top: 0;
+
+        h1.text-display {
+            span {
+                display: block;
+
+                &::before {
+                    content: attr(data-text);
+                }
+            }
+        }
+
+        // .text-display {
+        //     font-size: clamp(2em, 2vw, 3em);
+        // }
+
+        .text-heading {
+            font-size: clamp(1.75em, 1vw, 3em);
+        }
+    }
+
+    .page-body {
+        padding-top: 3rem;
+        width: clamp(1vw, 75vw, 100vw);
+        // font-size: clamp(0.25em, 2vw, 100vw);
+    }
+
+    .navbar {
+        font-size: min(100%, 3vw);
+    }
+
+    .resume-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        width: clamp(10vw, 50vw, 60vw);
+        font-size: clamp(0.75em, 1vw, 1em);
+    }
+
+    // .resume-download-wrapper {
+    //     flex-direction: column;
+    // }
+
+    .page-body_message {
+        .btn-label span {
+            font-size: clamp(0.25em, 0.75em, 1.5em);
+        }
+    }
+
+
+}
+
+@media (max-width: 700px) {
+
+    .line-subgroup {
+        display: none;
+    }
+
+    .resume-wrapper {
+        // width: min(100%, 100ch);
+        font-size: clamp(0.75em, 1vw, 1em);
+
+    }
+
+    .card {
+        
+        .card-content, .card-footer {
+            font-size: clamp(0.25em, 0.75em, 1em);
+        }
+    }
+
+    .card-brutkit {
+        ul {
+            padding-left: clamp(0.15em, 1vw, 0.5em);
+        }
+    }
+
+    main {
+        padding-bottom: 5rem;
+    }
+
+    footer {
+        .text-body {
+            font-size: clamp(0.25em, 0.5em, 0.75em);
+        }
+    }
+    
+}
+
+@media (max-width: 540px) {
+    .resume-wrapper {
+        font-size: clamp(1em, 1vw, 2em);
+
+        .btn {
+            padding-top: clamp(0.25em, 1vw, 0.5em);
+            padding-left: clamp(0.25em, 1vw, 0.5em);
+            padding-right: clamp(0.25em, 1vw, 0.5em);
+            padding-bottom: clamp(0.25em, 1vw, 0.5em);
+        }
+
+        #links-btn {
+            flex-direction: column;
+        }
+    }
+
+    .resume-download-wrapper {
+        flex-direction: column;
+        width: 100%;
+
+        button {
+            font-size: clamp(45px, 20vw, 80px);
+        }
+    }
+
+    .card {
+        font-size: clamp(0.75em, 1vw, 1em);
+
+        &-header {
+            padding-right: 0;
+        }
+
+        &-footer {
+            padding-right: 0;
+        }
+
+        .card-body {
+            padding-right: 0;
+        }
+
+        ul {
+            padding-left: 0.5em;
+            padding-right: 0;
+        }
+    }
+
+    .page-body {
+        font-size: clamp(0.25em, 2vw, 1em);
+        
+        .resume-wrapper {
+            line-height: 1.3;
+        }
+    }
+}

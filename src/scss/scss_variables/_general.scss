@@ -1,0 +1,17 @@
+.list-style-none {
+    ul {
+        list-style: none;
+        padding-left: 0;
+    }
+}
+
+#list-style-plus li::marker {
+    content: "+";
+    color: inherit;
+    font-size: inherit;
+    font-weight: 700;
+}
+
+#list-style li::before {
+    padding-left: 1em;
+}

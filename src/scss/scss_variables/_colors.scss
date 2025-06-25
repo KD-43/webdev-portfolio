@@ -1,0 +1,124 @@
+@use './mixins' as *;
+
+$blue: #2764F3;
+$darkBlue: #163C90;
+$darkGrey: #2F3136;
+$mediumGrey: #8A8B8E;
+$lightGrey: #E5E5E5;
+$black: #1d1616;
+$white: #f9f8ff;
+
+.bg-blue {
+    background-color: $blue;
+}
+.bg-dBlue {
+    background-color: $darkBlue;
+}
+.bg-dGrey {
+    background-color: $darkGrey;
+}
+.bg-mGrey {
+    background-color: $mediumGrey;
+}
+.bg-lGrey {
+    background-color: $lightGrey;
+}
+.bg-black {
+    background-color: $black;
+}
+.bg-white {
+    background-color: $white;
+}
+
+.border-blue {
+    border-color: $blue;
+}
+.border-dBlue {
+    border-color: $darkBlue;
+}
+.border-dGrey {
+    border-color: $darkGrey;
+}
+.border-mGrey {
+    border-color: $mediumGrey;
+}
+.border-lGrey {
+    border-color: $lightGrey;
+}
+.border-black {
+    border-color: $black;
+}
+.border-white {
+    border-color: $white;
+}
+
+.border_top-blue {
+    border-top: 0.15em solid $blue;
+}
+.border_top-dBlue {
+    border-top: 0.15em solid $darkBlue;
+}
+.border_top-dGrey {
+    border-top: 0.15em solid $darkGrey;
+}
+.border_top-mGrey {
+    border-top: 0.15em solid $mediumGrey;
+}
+.border_top-lGrey {
+    border-top: 0.15em solid $lightGrey;
+}
+.border_top-black {
+    border-top: 0.15em solid $black;
+}
+.border_top-white {
+    border-top: 0.15em solid $white;
+}
+
+.border_bottom-blue {
+    border-bottom: 0.15em solid $blue;
+}
+.border_bottom-dBlue {
+    border-bottom: 0.15em solid $darkBlue;
+}
+.border_bottom-dGrey {
+    border-bottom: 0.15em solid $darkGrey;
+}
+.border_bottom-mGrey {
+    border-bottom: 0.15em solid $mediumGrey;
+}
+.border_bottom-lGrey {
+    border-bottom: 0.15em solid $lightGrey;
+}
+.border_bottom-black {
+    border-bottom: 0.15em solid $black;
+}
+.border_bottom-white {
+    border-bottom: 0.15em solid $white;
+}
+
+.text-white {
+    color: $white;
+}
+.text-black {
+    color: $black;
+}
+.text-dGrey {
+    color: $darkGrey;
+}
+.text-mGrey {
+    color: $mediumGrey;
+}
+.text-lGrey {
+    color: $lightGrey;
+}
+.text-blue {
+    color: $blue;
+}
+.text-dBlue {
+    color: $darkBlue;
+}
+
+a.text-decoration-none {
+    text-decoration: none;
+    color: inherit;
+}

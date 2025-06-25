@@ -1,0 +1,73 @@
+$font-path: "../assets/fonts";
+
+@font-face {
+    src: url('#{$font-path}/Inter/Inter-Regular.ttf');
+    font-family: "Inter_Reg";
+}
+@font-face {
+    src: url('#{$font-path}/Inter/Inter-Medium.ttf');
+    font-family: "Inter_Med";
+}
+@font-face {
+    src: url('#{$font-path}/Inter/Inter-Bold.ttf');
+    font-family: "Inter_Bold";
+}
+@font-face {
+    src: url('#{$font-path}/Inter/Inter-Black.ttf');
+    font-family: "Inter_Black";
+}
+
+.text-body {
+    font-family: "Inter_Reg";
+    font-size: 1em;
+}
+
+.text-display {
+    font-family: "Inter_Med";
+    font-size: 1em;
+}
+
+.text-heading {
+    font-family: "Inter_Bold";
+    font-size: 1em;
+}
+
+.text-bold {
+    font-family: "Inter_Black";
+    font-size: 1em;
+}
+
+.fw-bold {
+    font-weight: bold;
+}
+
+.fs-1 {
+    font-size: 1em;
+}
+.fs-1_5 {
+    font-size: 1.5em;
+}
+.fs-2 {
+    font-size: 2em;
+}
+.fs-3 {
+    font-size: 3em;
+}
+.fs-4 {
+    font-size: 4em;
+}
+.fs-5 {
+    font-size: 5em;
+}
+
+.text-box-sm {
+    width: clamp(25ch, 50ch, 60ch);
+}
+
+.text-box-md {
+    width: clamp(50ch, 105ch, 120ch);
+}
+
+.text-box-body {
+    width: clamp(3ch, 105ch, 120ch);
+}

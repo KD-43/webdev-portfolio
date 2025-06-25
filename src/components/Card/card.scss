@@ -1,0 +1,57 @@
+@use '../../scss/fonts';
+@use '../../scss/scss_variables/colors' as *;
+
+.card {
+    display: grid;
+    grid-template-rows: auto auto 1fr auto auto;
+    height: 100%;
+    padding: 1rem 0 1rem 0;
+
+    &:hover {
+        background-color: $blue;
+        border-color: $blue;
+        color: $lightGrey;
+        transition: all 0.25s ease-in;
+        cursor: pointer;
+    }
+}
+
+// .card-content {
+//     display: flex;
+//     height: 100%;
+//     flex-direction: column;
+//     // align-items: center;
+//     justify-items: center;
+// }
+
+.card-header {
+    font-family: "Inter_Bold";
+    font-size: 1.5em;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 0.05em;
+    margin-bottom: 0.5em;
+}
+
+.card-body {
+    font-family: "Inter_Reg";
+    font-size: 1em;
+    padding: 1rem 1rem 0 1rem;
+    padding-bottom: clamp(0.25rem, 2rem, 2rem);
+}
+
+.card-footer {
+    font-family: "Inter_Med";
+    // font-size: clamp(0.60vw, 0.75vw, 0.8vw);
+    font-size: clamp(0.5em, 1em, 2em);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.05em;
+    margin-top: 0.5em;
+    height: max(2rem, 1vh);
+}
+
+.card-border {
+    border-top: 1.5px solid;
+    height: 0;
+}

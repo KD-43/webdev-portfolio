@@ -1,0 +1,84 @@
+@use '../../scss/scss_variables/variables' as *;
+:root {
+    --theme-navbar-bg: #E5E5E5;
+    --theme-navbar-link-color: #E5E5E5;
+    --theme-navbar-active-bg: #E5E5E5;
+    --theme-navbar-active-color: #2764F3;
+    --theme-navbar-hover-bg: #163C90;
+    --theme-navbar-hover-color: #2764F3;
+}
+
+.nav-list {
+    border: 2px solid;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.25em 0 0.25em 0;
+    display: flex;
+
+    a {
+        text-decoration: none;
+        padding: 0;
+        // transition: background-color 0.2s ease, color 0.2s ease;
+    }
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.navbar {
+    .nav-list {
+        border-color: var(--theme-navbar-bg);
+        
+        a {
+            color: var(--theme-navbar-link-color);
+            text-decoration: none;
+            padding: 0.25em 1em 0.25em 1em;
+
+            &:hover {
+                background-color: var(--theme-navbar-hover-bg);
+                color: var(--theme-navbar-hover-color);
+            }
+            // &:focus {
+            //     background-color: var(--theme-navbar-active-bg);
+            //     color: var(--theme-navbar-active-color);
+            // }
+            &.active {
+                background-color: var(--theme-navbar-active-bg);
+                color: var(--theme-navbar-active-color);
+            }
+
+        }
+
+    }
+}
+
+// .navbar.theme-default {
+//     .nav-list {
+//         border-color: $lightGrey;
+        
+//         a {
+//             color: $lightGrey;
+//             text-decoration: none;
+//             padding: 0.25em 1em 0.25em 1em;
+
+//             &:hover {
+//                 background-color: $darkBlue;
+//                 color: $blue;
+//             }
+//             &:focus {
+//                 background-color: $lightGrey;
+//                 color: $blue;
+//             }
+//             &.active {
+//                 background-color: $lightGrey;
+//                 color: $blue;
+//             }
+
+//         }
+
+//     }
+// }
+

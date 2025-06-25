@@ -1,0 +1,152 @@
+@use 'sass:color';
+@use 'sass:meta';
+// @use 'sass:math';
+@use '../../scss/scss_variables/colors' as *;
+@use '../../scss/fonts' as *;
+
+@mixin btnSize ($size) {
+    @if $size == 'small' {
+        border-radius: 3px;
+        font-size: 1em;
+        // padding: 4px 8px 4px 8px;
+        padding-top: clamp(2px, 1vw, 4px);
+        padding-left: clamp(4px, 1vw, 8px);
+        padding-right: clamp(4px, 1vw, 8px);
+        padding-bottom: clamp(2px, 1vw, 4px);
+        min-width: 53px;
+    }
+    @if $size == 'medium' {
+        border-radius: 6px;
+        font-size: 1.5em;
+        // padding: 12px 24px 12px 24px;
+        padding-top: clamp(12px, 1vw, 24px);
+        padding-left: clamp(6px, 1vw, 12px);
+        padding-right: clamp(6px, 1vw, 12px);
+        padding-bottom: clamp(12px, 1vw, 24px);
+        min-width: 88px;
+
+    }
+    @if $size == 'large' {
+        border-radius: 9px;
+        font-size: 2em;
+        // padding: 12px 24px 12px 24px;
+        padding-top: clamp(24px, 1vw, 48px);
+        padding-left: clamp(12px, 1vw, 24px);
+        padding-right: clamp(12px, 1vw, 24px);
+        padding-bottom: clamp(24px, 1vw, 48px);
+        min-width: 123px;
+
+    }
+}
+
+// @mixin btnColor ($selectors...) {
+//     @debug meta.keywords($selectors);
+//     @each $name, $color in meta.keywords($selectors) {
+//         .btn-#{$name} {
+
+//             border: 1px solid red;
+//         }
+//     }
+// };
+
+// @include btnColor(
+//     $blue: $lightGrey,
+//     $darkBlue: $lightGrey,
+//     $darkGrey: $mediumGrey,
+//     $mediumGrey: $darkGrey,
+//     $lightGrey: $blue,
+//     $black: $white,
+//     $white: $black,
+// );
+
+.btn {
+    box-sizing: border-box;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    border: none;
+    outline: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+    font-family: 'Inter_Bold';
+    flex-grow: 0;
+    flex-shrink: 0;
+
+    // padding: 1rem 1rem 1rem 1rem;
+    transition: all 0.25s ease-in;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+// .btn:before {
+//     content: attr(data-label);
+//     font-family: 'Pirata';
+//     visibility: hidden;
+// }
+
+// .btn-label {
+//     position: absolute;
+// }
+
+.btn-sm {
+    @include btnSize ('small');
+}
+.btn-md {
+    @include btnSize ('medium');
+}
+.btn-lg {
+    @include btnSize ('large');
+}
+
+.btn-blue {
+    background-color: $blue;
+    border: 1px solid $lightGrey;
+    color: $lightGrey;
+
+    &:hover {
+        background-color: $lightGrey;
+        color: $blue;
+    }
+}
+// .btn-darkRed {
+//     background-color: $darkRed;
+//     color: $white;
+
+//     &:hover {
+//         background-color: $red;
+//         color: $black;
+//     }
+// }
+// .btn-black {
+//     background-color: $black;
+//     color: $grey;
+
+//     &:hover {
+//         background-color: $white;
+//         color: $darkRed;
+//     }
+// }
+// .btn-white {
+//     background-color: $white;
+//     color: $black;
+
+//     &:hover {
+//         background-color: $black;
+//         color: $red;
+//     }
+// }
+// .btn-grey {
+//     background-color: $grey;
+//     color: $black;
+
+//     &:hover {
+//         background-color: $darkRed;
+//         color: $white;
+//     }
+// }

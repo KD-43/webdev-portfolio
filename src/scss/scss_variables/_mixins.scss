@@ -1,0 +1,15 @@
+@mixin flex-center ($gap) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: $gap;
+}
+
+@mixin hover ($mainColor, $textColor) {
+    :hover {
+        background-color: $mainColor;
+        border-color: $mainColor;
+        color: $textColor;
+        transition: all 0.25s ease-in;
+    }
+}

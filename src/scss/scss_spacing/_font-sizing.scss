@@ -1,0 +1,19 @@
+.text-heading {
+    font-size: clamp(5vw, 12vw, 15vw);
+}
+
+.text-auto-50 {
+    font-size: clamp(1vw, 4vw, 10vw);
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-end {
+    text-align: end;
+}
+
+.line-height-1_1 {
+    line-height: 1.1em;
+}
