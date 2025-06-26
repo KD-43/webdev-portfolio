@@ -77,9 +77,14 @@ function AppContent() {
             <div className="text-body container justify-content-center text-align-center fs-1">
               COPYRIGHT KDUONG INDUSTRIES, INC.<br />ALL RIGHTS RESERVED<br />PRINTED IN U.S.A<br />DO NOT DISTRIBUTE
             </div>
-            <div className="text-body text-align-end container flex-column align-items-end fs-1">
-              Contact: <br/>
-              duongtkevin5438@gmail.com
+            <div className="text-body container justify-content-btwn fs-1">
+              <div className="">
+                © 2025, KDUONG Powered by Cloudflare Pages
+              </div>
+              <div className="text-align-end">
+                Contact: <br/>
+                duongtkevin5438@gmail.com
+              </div>
             </div>
           </footer>
         </div>

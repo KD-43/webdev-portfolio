@@ -6,8 +6,8 @@ import ButtonComponent from '../components/Button/button';
 const ResumePage = memo(function ResumePageComponent () {
 
   const resumePath = './resume/';
-  const standardPath = `${resumePath}Resume_Kevin-Duong_2025_v3_standard.pdf`;
-  const grayscalePath = `${resumePath}Resume_Kevin-Duong_2025_v3_Grayscale.pdf`;
+  const standardPath = `${resumePath}Resume_Kevin-Duong_2025_v4.pdf`;
+  const grayscalePath = `${resumePath}Resume_Kevin-Duong_2025_v4_Grayscale.pdf`;
 
     return (
         <div className="page-wrapper container flex-column fs-1 text-lGrey pt-5">
@@ -125,7 +125,7 @@ const ResumePage = memo(function ResumePageComponent () {
               <div className="resume-download-wrapper d-flex pb-3 gap-2">
                 <ButtonComponent
                   href={standardPath}
-                  download="Resume_Kevin-Duong_2025_v3_standard.pdf"
+                  download="Resume_Kevin-Duong_2025_v4.pdf"
                   target="_blank"
                   size={"md"}
                   color={"blue"}
@@ -136,7 +136,7 @@ const ResumePage = memo(function ResumePageComponent () {
 
                 <ButtonComponent
                   href={grayscalePath}
-                  download="Resume_Kevin-Duong_2025_v3_Grayscale.pdf"
+                  download="Resume_Kevin-Duong_2025_v4_Grayscale.pdf"
                   target="_blank"
                   size={"md"}
                   color={"blue"}
