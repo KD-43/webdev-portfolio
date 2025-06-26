@@ -30,19 +30,10 @@ function LogoInsert () {
 
   useEffect(() => {
     console.log("Location changed: ", location.pathname);
-    switch (location.pathname) {
-      case '/about':
-        setCurrentLogoSrc(logoBlue);
-        break;
-      case '/resume':
-        setCurrentLogoSrc(logoLGrey);
-        break;
-      case '/projects':
-        setCurrentLogoSrc(logoBlue);
-        break;
-      default:
-        setCurrentLogoSrc(logoLGrey);
-        break;
+    if (location.pathname === '/about' || location.pathname === '/projects') {
+      setCurrentLogoSrc(logoBlue);
+    } else {
+      setCurrentLogoSrc(logoLGrey);
     }
 
   }, [location.pathname]);
@@ -88,8 +79,7 @@ function AppContent() {
             </div>
             <div className="text-body text-align-end container flex-column align-items-end fs-1">
               Contact: <br/>
-              duongtkevin5438@gmail.com <br />
-              +1 (408) 886-8313
+              duongtkevin5438@gmail.com
             </div>
           </footer>
         </div>

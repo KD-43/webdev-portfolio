@@ -32,12 +32,10 @@ const ResumePage = memo(function ResumePageComponent () {
                 
                 
                   <Grid.Col span={1} addClass={"text-heading fs-2 d-flex flex-column align-items-end"}>
-                    Info
+                    Contact
                   </Grid.Col>
                   <Grid.Col span={3} addClass={"text-display"}>
                     duongtkevin5438@gmail.com
-                    <br />
-                    +1 (408) 886-8313
                   </Grid.Col>
                 
                   <Grid.Col span={1} addClass={"text-heading fs-2 d-flex flex-column align-items-end"}>
@@ -46,17 +44,23 @@ const ResumePage = memo(function ResumePageComponent () {
                   <Grid.Col span={3}>
                     <div className="d-flex gap-1" id='links-btn'>
                       <ButtonComponent
+                        href="https://www.linkedin.com/in/kevin-t-duong/"
+                        target="_blank"
                         size={"sm"}
                         color={"blue"}
+                        addClass={"text-decoration-none"}
                       >
-                        <a href="https://www.linkedin.com/in/kevin-t-duong/" target="_blank" className='text-decoration-none'>LinkedIn</a>
+                        LinkedIn
                       </ButtonComponent>
 
                       <ButtonComponent
+                        href="https://github.com/KD-43"
+                        target="_blank"
                         size={"sm"}
                         color={"blue"}
+                        addClass={"text-decoration-none"}
                       >
-                        <a href="https://github.com/KD-43" target="_blank" className='text-decoration-none'>Github</a>
+                        Github
                       </ButtonComponent>
                     </div>
                   </Grid.Col>
@@ -120,19 +124,25 @@ const ResumePage = memo(function ResumePageComponent () {
 
               <div className="resume-download-wrapper d-flex pb-3 gap-2">
                 <ButtonComponent
+                  href={standardPath}
+                  download="Resume_Kevin-Duong_2025_v3_standard.pdf"
+                  target="_blank"
                   size={"md"}
                   color={"blue"}
-                  addClass={""}
+                  addClass={"text-decoration-none"}
                 >
-                  <a href={standardPath} download="Resume_Kevin-Duong_2025_v3_standard.pdf" target="_blank" className='text-decoration-none' id={"btn-download"}>PDF Download (Standard)</a>
+                  PDF Download (Standard)
                 </ButtonComponent>
 
                 <ButtonComponent
+                  href={grayscalePath}
+                  download="Resume_Kevin-Duong_2025_v3_Grayscale.pdf"
+                  target="_blank"
                   size={"md"}
                   color={"blue"}
-                  addClass={""}
+                  addClass={"text-decoration-none"}
                 >
-                  <a href={grayscalePath} download="Resume_Kevin-Duong_2025_v3_Grayscale.pdf" target="_blank" className='text-decoration-none' id={"btn-download"}>PDF Download (Grayscale)</a>
+                  PDF Download (Grayscale)
                 </ButtonComponent>
               </div>
 

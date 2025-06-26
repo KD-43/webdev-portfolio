@@ -130,6 +130,8 @@
         }
     }
 
+    
+
 
 }
 
@@ -190,8 +192,8 @@
         flex-direction: column;
         width: 100%;
 
-        button {
-            font-size: clamp(45px, 20vw, 80px);
+        a {
+            font-size: clamp(1em, 1vw, 2em);
         }
     }
 
