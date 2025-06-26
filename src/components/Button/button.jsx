@@ -2,7 +2,7 @@ import { useRef, useState } from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import './button.scss'
 
-function ButtonComponent ({ children, size, color, addClass, addId, disabled = false, onTrigger, ...otherProps }) {
+function ButtonComponent ({ children, size, color, addClass, addId, disabled = false, onTrigger, url, href, target, ...otherProps }) {
     const baseClass = "btn";
     const mergeClasses = `${baseClass} ${addClass || ''}`.trim();
     let btnSize;
@@ -63,9 +63,9 @@ function ButtonComponent ({ children, size, color, addClass, addId, disabled = f
     return (
         <ErrorBoundary fallbackRender={<div>Something went wrong with Btn {btnSize}, color: {btnColor}</div>}>
             <>
-                <button onClick={onTrigger} data-label={children} disabled={disabled} className={mergeClasses + ` btn-${btnSize} btn-${color}`} id={addId} {...otherProps}>
+                <a href={href} download={url} target={target} data-label={children} disabled={disabled} className={mergeClasses + ` btn-${btnSize} btn-${color}`} id={addId} {...otherProps}>
                     {children}
-                </button>
+                </a>
             </>
         </ErrorBoundary>
     );
