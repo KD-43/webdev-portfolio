@@ -23,8 +23,6 @@ function NotFoundPage () {
                   Please consider reflecting on the personal actions YOU can take to mitigate such errors.
                   <br />
                   <br />
-                  <br />
-                  <br />
                   KDUONG INDUSTRIES, INC. thanks you for your time and consideration.
                 </p>
               </div>

@@ -10,9 +10,10 @@ import NavItem from './components/Navbar/navItem';
 import { Theme, useTheme } from './contexts/ThemeContext';
 import logoBlue from './assets/images/logos/Logo_Blue.png';
 import logoLGrey from './assets/images/logos/Logo_Light_Grey.png';
+import logoDGrey from './assets/images/logos/Logo_Dark_Grey.png';
 import './scss/index.scss';
 
-const LOGO_PATHS = [ logoBlue, logoLGrey, ];
+const LOGO_PATHS = [ logoBlue, logoLGrey, logoDGrey];
 
 function LogoInsert () {
   const location = useLocation();
@@ -32,6 +33,8 @@ function LogoInsert () {
     console.log("Location changed: ", location.pathname);
     if (location.pathname === '/about' || location.pathname === '/projects') {
       setCurrentLogoSrc(logoBlue);
+    } else if (location.pathname !== '/' && location.pathname !== '/about' && location.pathname !== '/resume' && location.pathname !== '/projects') {
+      setCurrentLogoSrc(logoDGrey);
     } else {
       setCurrentLogoSrc(logoLGrey);
     }

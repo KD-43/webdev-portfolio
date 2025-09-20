@@ -6,8 +6,8 @@ import ButtonComponent from '../components/Button/button';
 const ResumePage = memo(function ResumePageComponent () {
 
   const resumePath = './resume/';
-  const standardPath = `${resumePath}Resume_Kevin-Duong_2025_v4.pdf`;
-  const grayscalePath = `${resumePath}Resume_Kevin-Duong_2025_v4_Grayscale.pdf`;
+  const standardPath = `${resumePath}Resume_Kevin-Duong_2025_v6.pdf`;
+  const grayscalePath = `${resumePath}Resume_Kevin-Duong_2025_v6_Grayscale.pdf`;
 
     return (
         <div className="page-wrapper container flex-column fs-1 text-lGrey pt-5">
@@ -87,7 +87,9 @@ const ResumePage = memo(function ResumePageComponent () {
                             <div className="d-flex flex-column justify-content-btwn gap-0_5 pl-1">
                               <li><span className='fw-bold'>Languages:</span> <span className="text-display">HTML5, CSS3/SASS, JavaScript, PHP</span></li>
                               <li><span className='fw-bold'>Framework:</span> <span className="text-display">Bootstrap</span></li>
-                              <li><span className='fw-bold'>Library:</span> <span className="text-display">React.js</span></li>
+                              <li><span className='fw-bold'>Library:</span> <span className="text-display">VITE/React.js</span></li>
+                              <li><span className='fw-bold'>Web Services Used:</span> <span className="text-display">Cloudflare Pages, Google Gemini 2.5 Pro</span></li>
+                              <li><span className='fw-bold'>General:</span> <span className="text-display">Frontend Web Development, UI Design, GIT, CI/CD deployment, REST API, CRUD, Custom Hooks (REACT)</span></li>
                             </div>
                           </ul>
                         </div>
@@ -97,7 +99,7 @@ const ResumePage = memo(function ResumePageComponent () {
                         <div className='fw-bold fs-1_5 line-height-1_1  pt-2 pb-1'>Graphic Design</div>
                         <ul className='mu-0 border-xs border-radius-xs border-dBlue pu-1'>
                           <div className="pl-1">
-                            <li><span className='fw-bold'>Software:</span> <span className="text-display">Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Figma</span></li>
+                            <li><span className='fw-bold'>Software:</span> <span className="text-display">Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Figma, Krita</span></li>
                           </div>
                         </ul>
                       </li>
@@ -125,7 +127,7 @@ const ResumePage = memo(function ResumePageComponent () {
               <div className="resume-download-wrapper d-flex pb-3 gap-2">
                 <ButtonComponent
                   href={standardPath}
-                  download="Resume_Kevin-Duong_2025_v4.pdf"
+                  download="Resume_Kevin-Duong_2025_v6.pdf"
                   target="_blank"
                   size={"md"}
                   color={"blue"}
@@ -136,7 +138,7 @@ const ResumePage = memo(function ResumePageComponent () {
 
                 <ButtonComponent
                   href={grayscalePath}
-                  download="Resume_Kevin-Duong_2025_v4_Grayscale.pdf"
+                  download="Resume_Kevin-Duong_2025_v6_Grayscale.pdf"
                   target="_blank"
                   size={"md"}
                   color={"blue"}
