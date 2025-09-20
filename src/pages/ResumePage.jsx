@@ -7,7 +7,7 @@ const ResumePage = memo(function ResumePageComponent () {
 
   const resumePath = './resume/';
   const standardPath = `${resumePath}Resume_Kevin-Duong_2025_v6.pdf`;
-  const grayscalePath = `${resumePath}Resume_Kevin-Duong_2025_v6_Grayscale.pdf`;
+  const grayscalePath = `${resumePath}Resume_Kevin-Duong_2025_v6-Grayscale.pdf`;
 
     return (
         <div className="page-wrapper container flex-column fs-1 text-lGrey pt-5">
