@@ -28,7 +28,7 @@ const ProjectPage = memo(function ProjectPageComponent () {
             </div>
 
             <div className='w-50 pt-5'>
-              <Grid.Row gap={40} columns={3}>
+              <Grid.Row gap={40} columns={4}>
                 <Grid.Col span={2}>
                   <CardComponent
                     addClassToBase={"border-xs border-radius-sm border-blue card-brutkit"}
@@ -48,21 +48,26 @@ const ProjectPage = memo(function ProjectPageComponent () {
                     </ul>
                   </CardComponent>
                 </Grid.Col>
-                {/* <CardComponent
-                  addClassToBase={"border-xs border-radius-sm border-mGrey"}
-                  addClassToHeader={""}
-                  addClassToBody={""}
-                  addClassToFooter={""}
-                  title={"Pigeon Gamer"}
-                  footer={"HTML5, JavaScript, SASS/CSS, Bootstrap"}
-                  onClick={() => linkTrigger("https://github.com/KD-43/pigeongamer")}
-                >
-                  Discount games finder
-                  <ul>
-                    <li>Cheapshark-API integration</li>
-                    <li>Bootstrap Integration</li>
-                  </ul>
-                </CardComponent> */}
+                <Grid.Col span={2}>
+                  <CardComponent
+                    addClassToBase={"border-xs border-radius-sm border-blue"}
+                    addClassToHeader={""}
+                    addClassToBody={""}
+                    addClassToFooter={""}
+                    title={"CineRank"}
+                    footer={"HTML5, SASS/CSS, Vite/REACT.JS, Bootstrap"}
+                    onClick={() => linkTrigger("https://cinerank.pages.dev")}
+                  >
+                    Move tier list maker
+                    <ul id="list-style-plus">
+                      <li className='pl-1 mb-1'>Fully interactive, single-page application that allows users to create, customize, and manage personal tier lists.</li>
+                      <li className='pl-1 mb-1'>Architected a custom, all-in-one state management hook (useTierList) to encapsulate all complex logic.</li>
+                      <li className='pl-1 mb-1'>Implemented a multi-container, sortable drag-and-drop interface with 'React DnD'</li>
+                      <li className='pl-1 mb-1'>Designed and built a RESTful API backend using Cloudflare Functions to handle all CRUD operations.</li>
+                      <li className='pl-1 mb-1'>Configured a full CI/CD pipeline from GitHub to Cloudflare Pages for automatic deployments, including management of server-side secrets and SPA routing (_redirects).</li>
+                    </ul>
+                  </CardComponent>
+                </Grid.Col>
               </Grid.Row>
             </div>
         </div>

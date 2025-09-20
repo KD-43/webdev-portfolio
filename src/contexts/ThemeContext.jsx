@@ -2,6 +2,7 @@ import React, { createContext, useContext, useState, useEffect, memo, useMemo } 
 import { useLocation } from 'react-router-dom';
 
 const palette = {
+    lightBlue: '#2786f3ff',
     blue: '#2764F3',
     darkBlue: '#163C90',
     darkGrey: '#2F3136',
@@ -18,9 +19,11 @@ const defaultTheme = {
     navbarActiveBg: palette.lightGrey,
     navbarActiveColor: palette.blue,
     navbarHoverBg: palette.darkBlue,
-    navbarHoverColor: palette.blue,
+    navbarHoverColor: palette.lightBlue,
     pageBg: palette.blue,
     footerColor: palette.lightGrey,
+    lineBorderColor: palette.lightGrey,
+    bodyTextColor: palette.lightGrey,
 };
 
 const ThemeContext = createContext({
@@ -41,6 +44,8 @@ const themes = {
         navbarHoverColor: palette.lightGrey,
         pageBg: palette.lightGrey,
         footerColor: palette.blue,
+        lineBorderColor: palette.blue,
+        bodyTextColor: palette.blue,
     },
     notFound : {
         name: 'notFound',
@@ -52,6 +57,8 @@ const themes = {
         navbarHoverColor: palette.mediumGrey,
         pageBg: palette.mediumGrey,
         footerColor: palette.darkGrey,
+        lineBorderColor: palette.darkGrey,
+        bodyTextColor: palette.darkGrey,
     },
 };
 
@@ -72,7 +79,7 @@ export const Theme = memo(function ThemeProvider ({ children }) {
             case location.pathname === '/projects':
                 newThemeName = 'secondaryTheme';
                 break;
-            case location.pathname ==! '/' && location.pathname ==! '/about' && location.pathname ==! '/resume' && location.pathname ==! '/projects':
+            case location.pathname !== '/' && location.pathname !== '/about' && location.pathname !== '/resume' && location.pathname !== '/projects':
                 newThemeName = 'notFound';
                 break;
             default:

@@ -17,6 +17,8 @@ html {
 :root {
   --theme-page-bg: #2764F3;
   --theme-footer-color: #E5E5E5;
+  --theme-line-border-color: #E5E5E5;
+  --theme-body-text-color: #E5E5E5;
 
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
 
@@ -90,4 +92,11 @@ h1, h2, h3, h4, h5 {
 
 p {
   margin: 0;
+}
+
+.page-wrapper {
+  color: var(--theme-body-text-color);
+  .line-group hr{
+    border-color: var(--theme-line-border-color);
+  }
 }
