@@ -18,7 +18,13 @@ const AboutPage = memo(function AboutPageComponent () {
                 </h1>
                 <div className="page-body_message pt-2">
                   <p className="text-body fs-2">
-                    Based in the Bay Area, he was initially a graphic designer who graduated with Bachelor's degree from San Jose State University. He's since transitioned to front-end web development, with working knowledge of languages such as HTML, CSS, SASS, JavaScript, and PHP. He's experienced with building small applications natively and through leveraging frameworks like Bootstrap and libraries like React. He has recently published a basic UI library called 'Brutkit', that aims to achieve visually bold, but accessible, web design.
+                    A Junior software engineer with a strong front-end focus in
+                    React and JavaScript. Experienced in building and
+                    deploying component-based web applications, integrating
+                    APIs, and developing maintainable UI architectures. Strong
+                    problem-solver with hands-on experience in debugging,
+                    testing, and iterative development.
+
                   </p>
                 </div>
             </div>

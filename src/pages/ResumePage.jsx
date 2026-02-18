@@ -6,8 +6,7 @@ import ButtonComponent from '../components/Button/button';
 const ResumePage = memo(function ResumePageComponent () {
 
   const resumePath = './resume/';
-  const standardPath = `${resumePath}Resume_Kevin-Duong_2025_v6.pdf`;
-  const grayscalePath = `${resumePath}Resume_Kevin-Duong_2025_v6-Grayscale.pdf`;
+  const standardPath = `${resumePath}Resume_SWE_2026_Kevin_Duong_v1.pdf`;
 
     return (
         <div className="page-wrapper container flex-column fs-1 text-lGrey pt-5">
@@ -23,13 +22,6 @@ const ResumePage = memo(function ResumePageComponent () {
 
               <div className='resume-wrapper list-style-none'>
                 <Grid.Row gap={30} columns={4} addClass={"pb-5"}>
-                  <Grid.Col span={1} addClass={"text-heading fs-2 d-flex flex-column align-items-end"}>
-                    Profile
-                  </Grid.Col>
-                  <Grid.Col span={3} addClass={"d-flex text-display"}>
-                    A front-end developer who enjoys building creative applications that are both functional and accessible. Seeking an opportunity to support the development of engaging projects and work with skillful developers. Most of all, I'm interested in expanding both my knowledge and skill-set of the profession.
-                  </Grid.Col>
-                
                 
                   <Grid.Col span={1} addClass={"text-heading fs-2 d-flex flex-column align-items-end"}>
                     Contact
@@ -70,6 +62,8 @@ const ResumePage = memo(function ResumePageComponent () {
                   </Grid.Col>
                   <Grid.Col span={3}>
                     <ul className='mu-0 pl-1'>
+                      <li><span className='fw-bold'>PigeonGamer</span> - Fullstack Video Game Deals Watchlist</li>
+                      <li><span className='fw-bold'>CineRank</span> - SPA Movie Tier List Creator</li>
                       <li><span className='fw-bold'>Brutkit</span> - A React UI-component library.</li>
                     </ul>
                   </Grid.Col>
@@ -81,27 +75,19 @@ const ResumePage = memo(function ResumePageComponent () {
                     <ul className='mu-0 pl-1'>
 
                       <li>
-                        <div className='fw-bold fs-1_5 line-height-1_1 pb-1'>Web Development</div>
                         <div className="border-xs border-radius-xs border-dBlue">
                           <ul className='mu-0 pu-1'>
                             <div className="d-flex flex-column justify-content-btwn gap-0_5 pl-1">
-                              <li><span className='fw-bold'>Languages:</span> <span className="text-display">HTML5, CSS3/SASS, JavaScript, PHP</span></li>
-                              <li><span className='fw-bold'>Framework:</span> <span className="text-display">Bootstrap</span></li>
-                              <li><span className='fw-bold'>Library:</span> <span className="text-display">VITE/React.js</span></li>
-                              <li><span className='fw-bold'>Web Services Used:</span> <span className="text-display">Cloudflare Pages, Google Gemini 2.5 Pro</span></li>
-                              <li><span className='fw-bold'>General:</span> <span className="text-display">Frontend Web Development, UI Design, GIT, CI/CD deployment, REST API, CRUD, Custom Hooks (REACT)</span></li>
+                              <li><span className='fw-bold'>Languages & Core Tech:</span> <span className="text-body">HTML5, CSS3/SASS, JavaScript(ES6+), Node.js</span></li>
+                              <li><span className='fw-bold'>Frontend Dev:</span> <span className="text-body">React, Component-based architecture, State management (custom hooks, reducers), Responsive UI Development, UI validation & Interaction handling</span></li>
+                              <li><span className='fw-bold'>Backend & Data:</span> <span className="text-body">RESTful API Design, Express.js, MongoDB, Server-side caching, Rate-limiting & data refresh strategies</span></li>
+                              <li><span className='fw-bold'>Testing & Debugging:</span> <span className="text-body">Manual testing, API testing, Debugging asynchronous flows, Error handling & edge case validation</span></li>
+                              <li><span className='fw-bold'>Tools & Workflow:</span> <span className="text-body">Git & GitHub (CI/CD Integration), NPM, Chrome DevTools, VS Code, Environment configuration</span></li>
+                              <li><span className='fw-bold'>Cloud Deployment:</span> <span className="text-body">Render, Cloudflare Pages</span></li>
+                              <li><span className='fw-bold'>Design & Collaboration:</span> <span className="text-body">UI/UIX Fundamentals, Design Systems, Figma, Documentation, Accessibility-aware design</span></li>
                             </div>
                           </ul>
                         </div>
-                      </li>
-                      
-                      <li className='pb-2'>
-                        <div className='fw-bold fs-1_5 line-height-1_1  pt-2 pb-1'>Graphic Design</div>
-                        <ul className='mu-0 border-xs border-radius-xs border-dBlue pu-1'>
-                          <div className="pl-1">
-                            <li><span className='fw-bold'>Software:</span> <span className="text-display">Adobe Illustrator, Adobe Photoshop, Adobe After Effects, Figma, Krita</span></li>
-                          </div>
-                        </ul>
                       </li>
 
                     </ul>
@@ -127,24 +113,13 @@ const ResumePage = memo(function ResumePageComponent () {
               <div className="resume-download-wrapper d-flex pb-3 gap-2">
                 <ButtonComponent
                   href={standardPath}
-                  download="Resume_Kevin-Duong_2025_v6.pdf"
+                  download="Resume_SWE_2026_Kevin_Duong_v1.pdf"
                   target="_blank"
                   size={"md"}
                   color={"blue"}
                   addClass={"text-decoration-none"}
                 >
-                  PDF Download (Standard)
-                </ButtonComponent>
-
-                <ButtonComponent
-                  href={grayscalePath}
-                  download="Resume_Kevin-Duong_2025_v6_Grayscale.pdf"
-                  target="_blank"
-                  size={"md"}
-                  color={"blue"}
-                  addClass={"text-decoration-none"}
-                >
-                  PDF Download (Grayscale)
+                  PDF Download
                 </ButtonComponent>
               </div>
 

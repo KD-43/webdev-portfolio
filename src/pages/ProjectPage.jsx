@@ -35,16 +35,28 @@ const ProjectPage = memo(function ProjectPageComponent () {
                     addClassToHeader={""}
                     addClassToBody={""}
                     addClassToFooter={""}
-                    title={"Brutkit"}
-                    footer={"REACT.JS, SASS/CSS"}
-                    onClick={() => linkTrigger("https://github.com/KD-43/brutkit")}
+                    title={"PigeonGamer v2"}
+                    footer={"MongoDB, Express.js, React.js, Node.js"}
+                    onClick={() => linkTrigger("https://pigeongamer.onrender.com/")}
                   >
-                    React UI-component Library
+                    Full-Stack Watchlist App
                     <ul id="list-style-plus">
-                      <li className='pl-1'>9 controlled components</li>
-                      <li className='pl-1'>'Brutalism' design theme</li>
-                      <li className='pl-1'>Simple and easy integration</li>
-                      <li className='pl-1'>Utility Classes</li>
+                      <li className='pl-1 mb-1'>Built a full-stack watchlist app using
+                        Node.js and MongoDB, enabling
+                        anonymous users (UUID) to track video
+                        game deals
+                      </li>
+                      <li className='pl-1 mb-1'>
+                        Designed and implemented RESTful
+                        APIs supporting watchlist CRUD
+                        operations and game search via the
+                        CheapShark API.
+                      </li>
+                      <li className='pl-1 mb-1'>
+                        Implemented server-side caching with
+                        timed refresh logic to mitigate rate
+                        limiting and reduce external API calls.
+                      </li>
                     </ul>
                   </CardComponent>
                 </Grid.Col>
@@ -65,6 +77,25 @@ const ProjectPage = memo(function ProjectPageComponent () {
                       <li className='pl-1 mb-1'>Implemented a multi-container, sortable drag-and-drop interface with 'React DnD'</li>
                       <li className='pl-1 mb-1'>Designed and built a RESTful API backend using Cloudflare Functions to handle all CRUD operations.</li>
                       <li className='pl-1 mb-1'>Configured a full CI/CD pipeline from GitHub to Cloudflare Pages for automatic deployments, including management of server-side secrets and SPA routing (_redirects).</li>
+                    </ul>
+                  </CardComponent>
+                </Grid.Col>
+                <Grid.Col span={2}>
+                  <CardComponent
+                    addClassToBase={"border-xs border-radius-sm border-blue card-brutkit"}
+                    addClassToHeader={""}
+                    addClassToBody={""}
+                    addClassToFooter={""}
+                    title={"Brutkit"}
+                    footer={"REACT.JS, SASS/CSS"}
+                    onClick={() => linkTrigger("https://github.com/KD-43/brutkit")}
+                  >
+                    React UI-component Library
+                    <ul id="list-style-plus">
+                      <li className='pl-1 mb-1'>9 controlled components</li>
+                      <li className='pl-1 mb-1'>'Brutalism' design theme</li>
+                      <li className='pl-1 mb-1'>Simple and easy integration</li>
+                      <li className='pl-1 mb-1'>Utility Classes</li>
                     </ul>
                   </CardComponent>
                 </Grid.Col>

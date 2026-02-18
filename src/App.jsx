@@ -18,6 +18,7 @@ const LOGO_PATHS = [ logoBlue, logoLGrey, logoDGrey];
 function LogoInsert () {
   const location = useLocation();
   const [currentLogoSrc, setCurrentLogoSrc] = useState(logoLGrey);
+  const [disclaimerText, setDisclaimerText] = useState('text-lGrey');
 
   useEffect(() => {
     LOGO_PATHS.forEach(path => {
@@ -33,16 +34,22 @@ function LogoInsert () {
     console.log("Location changed: ", location.pathname);
     if (location.pathname === '/about' || location.pathname === '/projects') {
       setCurrentLogoSrc(logoBlue);
+      setDisclaimerText('text-blue');
     } else if (location.pathname !== '/' && location.pathname !== '/about' && location.pathname !== '/resume' && location.pathname !== '/projects') {
       setCurrentLogoSrc(logoDGrey);
+      setDisclaimerText('text-dGrey');
     } else {
       setCurrentLogoSrc(logoLGrey);
+      setDisclaimerText('text-lGrey');
     }
 
   }, [location.pathname]);
 
   return (
-      <img src={currentLogoSrc} className='logo' />
+      <>
+        <img src={currentLogoSrc} className='logo' />
+        <div className={`text-bold pl-1 ${disclaimerText}`}>* This website's theme is a parody of the Apply TV Show: <span className=''>'Severance'</span></div>
+      </>
   );
 }
 
@@ -53,7 +60,7 @@ function AppContent() {
         <div className="parent text-lGrey">
           <header>
             <div className="navbar-wrapper container justify-content-btwn align-items-center fs-1 pt-2">
-              <div className="d-flex logo-wrapper">
+              <div className="d-flex align-items-center justify-content-center logo-wrapper">
                 <LogoInsert />
               </div>
               <Navbar>
@@ -82,7 +89,7 @@ function AppContent() {
             </div>
             <div className="text-body container justify-content-btwn fs-1">
               <div className="">
-                © 2025, KDUONG Powered by Cloudflare Pages
+                © 2026, KDUONG Powered by Cloudflare Pages
               </div>
               <div className="text-align-end">
                 Contact: <br/>
