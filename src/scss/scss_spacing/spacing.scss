@@ -27,9 +27,12 @@
 }
 
 .container {
-    display: flex;
-    width: 90%;
-    margin-inline: auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5rem;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .d-flex {
