@@ -2,7 +2,10 @@ import React, { memo } from 'react';
 import Grid from '../components/Grid/grid';
 import CardComponent from '../components/Card/card';
 
-const ProjectPage = memo(function ProjectPageComponent () {
+const WorkPage = memo(function WorkPageComponent () {
+    return (
+        <h1>Work Page</h1>
+    )
 })
 
-export default ProjectPage
+export default WorkPage

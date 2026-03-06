@@ -1,33 +1,25 @@
-import React, { memo, useState } from 'react';
+import React, { memo, useState, } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Grid from '../components/Grid/grid';
 
 const HomePage = memo(function HomePageComponent () {
+    const nav = useNavigate();
     return (
-        <div className="page-wrapper container flex-column fs-1 text-lGrey pt-5">
-            <h1 className='page-heading text-display fs-4 mu-0 pb-1'>Disclaimer</h1>
-            <div className="line-group w-75 mu-0">
-              <hr className="line-item mu-0" />
-              <span className='line-subgroup'>
-                <hr className="line-item mu-0" />
-                <hr className="line-item mu-0" />
-                <hr className="line-item mu-0" />
-              </span>
+        <div className="container bg-blue">
+            <div onClick={() => nav('/about')} className='text-body text-white' style={{ alignItems: 'baseline', fontSize: '32px', paddingTop: '256px', gridColumn: '1 / 2'}}>
+              About
             </div>
+            <div onClick={() => nav('work')} className='text-body text-white' style={{ alignItems: 'baseline', fontSize: '32px', paddingTop: '256px', gridColumn: '3 / 4'}}>
+              Work
+            </div>
+            <div onClick={() => nav('/contact')} className='text-body text-white' style={{ alignItems: 'baseline', fontSize: '32px', paddingTop: '256px', gridColumn: '5 / 7'}}>
+              Contact
+            </div>
+            <h1 className='text-display text-white' style={{ fontSize: '176px', gridColumn: '1 / 12', paddingTop: '128px', margin: 0, }}>Kevin Duong</h1>
+            <h2 className='text-heading text-white' style={{ fontSize: '32px', gridColumn: '1 / 6', paddingTop: '128px', paddingBottom: '256px' }}>Software Engineer Portfolio</h2>
 
-            <div className='page-body pt-5'>
-              <h1 className="text-heading fs-3 mu-0">Greetings Initiate,</h1>
-              <div className="page-body_message pt-2">
-                <p className="text-body fs-2">
-                  We're elated that you've chosen to partake in the visitation of KDUONG Industries!
-                  <br />
-                  <br />
-                  This platform will be undergoing some changes soon! Pre-production has begun for KDUONG Industries' renovation.
-                  <br />
-                  <br />
-                  We can't wait for you to see what we have in store for you!
-                </p>
-              </div>
-            </div>
+            <div className='text-body text-white' style={{ gridColumn: '1 / 2', fontSize: '16px' }}>Settings</div>
+            <div className='text-body text-white' style={{ gridColumn: '3 / 6', fontSize: '16px' }}>Copyright Kevin Duong 2026</div>
         </div>
     )
 });
